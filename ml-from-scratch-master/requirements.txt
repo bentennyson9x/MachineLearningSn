@@ -1,0 +1,11 @@
+numpy
+tensorflow
+matplotlib
+sklearn
+python-mnist
+jupyter
+requests
+cvxopt
+pandas
+scipy
+opencv-python
