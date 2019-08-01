@@ -1,9 +1,9 @@
 from keras.models import load_model
 from keras.preprocessing import image
-import numpy as np
+
 from os import listdir
 from os.path import isfile, join
-
+import numpy as np
 
 # dimensions of our images
 img_width, img_height = 150, 150

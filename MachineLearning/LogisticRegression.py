@@ -1,11 +1,20 @@
 import numpy as np
 import pandas as pd
+import cv2
 import matplotlib.pyplot as plt
 from sklearn.impute import SimpleImputer
 from mpl_toolkits.mplot3d import axes3d
 from sklearn import tree
 from mpl_toolkits.mplot3d import axes3d
-import cv2
+from keras.preprocessing.image import ImageDataGenerator
+from keras.models import Sequential
+from keras.layers import Conv2D, MaxPooling2D
+from keras.layers import Activation, Dropout, Flatten, Dense
+from keras import backend as K
+from keras.models import load_model
+from keras.preprocessing import image
+from os import listdir
+from os.path import isfile, join
 from sklearn.model_selection import train_test_split  ## dung de tach bo test ra
 from sklearn.datasets import load_iris
 ## ham train_test_split se tach bo train voi bo test ra rieng biet de xay dung model voi nhung thu vien dataset
